@@ -1,3 +1,24 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+body {
+  --tw-bg-opacity: 1;
+  background-color: rgb(249 250 251 / var(--tw-bg-opacity));
+}
+
+.tdbutton {
+  @apply mr-4 w-full rounded-lg px-6 py-3 font-sans text-xs font-bold uppercase text-white shadow-md transition-all hover:shadow-lg focus:opacity-[0.85] focus:shadow-none active:opacity-[0.85] active:shadow-none disabled:pointer-events-none disabled:opacity-50 disabled:shadow-none;
+}
+
+.disabled {
+  @apply bg-red-400;
+}
+
+.tr-check {
+  @apply text-nowrap pr-2;
+}
+
+.show-more-button {
+  @apply mb-2 me-2 inline-flex items-center rounded-lg px-5 py-2.5 text-center text-sm font-medium text-white hover:bg-[#050708]/30 focus:outline-none focus:ring-4 focus:ring-gray-500;
+}
